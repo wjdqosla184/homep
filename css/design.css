@@ -338,7 +338,7 @@ main {
 .top-section {
   position: relative;
   overflow: hidden;
-  z-index: 0; /* 배경은 맨 아래에 있도록 */
+  z-index: 0; 
 }
 
 .top-section::before {
@@ -355,4 +355,35 @@ main {
   z-index: 0;
   pointer-events: none;
 }
+.todo-input-row{
+  display:flex;
+  align-items:center;   
+  gap:8px;
+  margin-top:8px;
+}
 
+.todo-input-row input{
+  flex:1;               
+  padding:6px 8px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  box-sizing:border-box;
+}
+
+
+#clearMission{
+  float:none !important;
+  padding:6px 16px;
+  background:#bfbfbf;     
+  color:#fff;
+  font-weight:600;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+#clearMission:hover{
+  background:#a9a9a9;      
+  opacity:1;
+}
